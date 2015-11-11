@@ -12,12 +12,11 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
 }
 
--(void) awakeFromNib{
+- (void)awakeFromNib {
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setTitle:@"W"];
     //[statusItem setImage:[NSImage imageNamed:@"menubaricon.png"]];
@@ -167,10 +166,9 @@
         NSDictionary *grandObj = [dataObj objectForKey:@"grand_total"];
         NSInteger *totalseconds = [[grandObj valueForKey:@"total_seconds"] integerValue];
         NSDictionary *rangeObj = [dataObj objectForKey:@"range"];
-        NSString* date = [rangeObj valueForKey:@"date"];
-        NSString* date_human = [rangeObj valueForKey:@"date_human"];
-        NSString* grand_total_text = [grandObj valueForKey:@"text"];
-        
+        NSString *date = [rangeObj valueForKey:@"date"];
+        NSString *date_human = [rangeObj valueForKey:@"text"];
+        NSString *grand_total_text = [grandObj valueForKey:@"text"];
         // Each item is clickable, we store the url to the date in it's tooltip
         NSMenuItem *dateItem = [[NSMenuItem alloc] initWithTitle:date_human.capitalizedString
                                                           action:@selector(open:)
