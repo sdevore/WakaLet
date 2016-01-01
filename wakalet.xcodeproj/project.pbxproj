@@ -167,7 +167,7 @@
 		FA0DC48916A2F38A00E72B66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jonathan Winger Lang";
 			};
 			buildConfigurationList = FA0DC48C16A2F38A00E72B66 /* Build configuration list for PBXProject "wakalet" */;
@@ -279,6 +279,7 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -328,6 +329,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WakaLet/wakalet-Prefix.pch";
 				INFOPLIST_FILE = "WakaLet/wakalet-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jontelang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = wakalet;
 				WRAPPER_EXTENSION = app;
 			};
@@ -341,6 +343,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WakaLet/wakalet-Prefix.pch";
 				INFOPLIST_FILE = "WakaLet/wakalet-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jontelang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = wakalet;
 				WRAPPER_EXTENSION = app;
 			};
